@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Лендинг
+    meta(content="width=device-width, initial-scale=1" name="viewport")
+    meta(content="ie=edge" http-equiv="x-ua-compatible")
+    link(href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet")
+    link(rel='stylesheet' href='./css/main.css')
+  body
+    include _header.pug
+    .main-section
+        include banner-section.pug
+        include questions-section.pug
+        include text-section.pug
+        include advantages-section.pug
+        include form-seciton.pug
+    include _footer.pug     
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js")
+    script(src="./js/jquery.validate.min.js")
+    script(src="./js/jquery.mask.min.js")
+    script(src='./js/main.js' defer)
+    <!--[if lt IE 9]>
+    script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+    <![endif]-->

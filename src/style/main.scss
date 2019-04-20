@@ -1,0 +1,57 @@
+/* Variables */
+$color_text: #222222;
+$color_paragraph:#4E4D53;
+$color_bg: #E5E5E5;
+$color_form_bg: #161616;
+$color_orange: #F47821;
+
+/* Reset Styles */
+*{
+	margin: 0;
+	padding: 0;
+	color: $color_text;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	font-family: 'DIN Pro', sans-serif;
+	font-size: 14px;
+}
+.main-section{
+	flex: 1 0 auto;
+}
+.container{
+	width: 100%;
+	max-width: 1440px;
+	margin:0 auto;
+	position: relative;
+}
+
+
+/* Include Fonts */
+@font-face {
+    font-family: 'DIN Pro';
+    src: url('../fonts/DINPro.eot');
+    src: url('../fonts/DINPro.woff') format('woff'),
+         url('../fonts/DINPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Include Mixins */
+@import "mixins";
+/* Include Sections */
+@import "sections/header";
+@import "sections/footer";
+@import "sections/banner-section";
+@import "sections/questions-section";
+@import "sections/text-section";
+@import "sections/advantages-section";
+@import "sections/form-seciton";
+/* Include Components */
+@import "components/button";
+@import "components/page-title";

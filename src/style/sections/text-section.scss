@@ -1,0 +1,26 @@
+.text-section{
+	padding:5%;
+}
+.text__container{
+	width: 60%;
+	margin:0 auto;
+	@include mobile{
+		width:80%;
+	}
+}
+.text__title{
+	font-family: DIN Pro;
+	font-size: 48px;
+	line-height: normal;
+	letter-spacing: -0.02em;
+	margin-bottom: 24px;
+}
+.text__content p{
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 26px;
+	color:$color_paragraph;
+	margin-bottom: 40px;
+}

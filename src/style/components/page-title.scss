@@ -1,0 +1,11 @@
+.page-title{
+	font-family: DIN Pro;
+	font-size: 40px;
+	line-height: normal;
+	text-align: center;
+	letter-spacing: -0.02em;
+	margin-bottom: 60px;
+	@include mobile{
+		font-size:33px;
+	}
+}

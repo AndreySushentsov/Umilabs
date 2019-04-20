@@ -1,0 +1,22 @@
+section.form-section
+	.container.form-section__container
+		.page-title Теперь расскажите о себе
+		form(method="post" actoin=".").form
+			.input__block
+				span 1
+				label Фамилия и имя
+					input(type="text" name="name" placeholder="Сидоров Александр" required)
+			.input__block
+				span 2
+				label Электронная почта
+					input(type="email" name="email" placeholder="Sidorov@yandex.ru" required)
+			.input__block
+				span 3
+				label Телефон
+					input(type="tel" name="tel" placeholder="+7 (999)-328-14-20" required)
+			.input__block
+				span 4
+				label Какой деятельностью, не связанной с текущими проектами, вы бы хотели заниматься в рабочее время?
+					textarea(name="textarea" rows="3" placeholder="Свой проект по созданию универсальной инфраструктуры строительства")
+			.input__block
+				input(type="submit" value="Отправить").btn.form__btn

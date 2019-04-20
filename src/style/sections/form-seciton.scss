@@ -1,0 +1,90 @@
+.form-section{
+	padding: 100px;
+	background: $color_form_bg;
+	.page-title{
+		color: white;
+	}
+	@include mobile{
+		padding: 100px 20px;
+	}
+}
+.form{
+	width: 50%;
+	margin:0 auto;
+	label{
+		font-size: 16px;
+		line-height: 25px;
+		letter-spacing: -0.01em;
+		color:white;
+		margin-bottom: 12px;
+	}
+	input, textarea{
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 35px;
+		letter-spacing: -0.01em;
+		padding:12px;
+		padding-left:0;
+		background:transparent;
+		border:none;
+		border-bottom: 1px solid;
+		outline: none;
+/*		margin-bottom: 70px;*/
+		width: 	100%;
+		color:white;
+	}
+	.error{
+		color: red;
+	}
+	@include tablet{
+		width: 80%;
+	}
+	@include mobile{
+		width: 100%;
+	}
+}
+.form input, .form textarea{
+	display: block;
+	@include mobile{
+		font-size: 18px;
+	}
+}
+.input__block{
+	position: relative;
+	margin-bottom: 70px;
+	span{
+		position: absolute;
+		left: -80px;
+		top: -20px;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: normal;
+		text-align: center;
+		color: $color_orange;
+		border: 1px solid white;
+		width:60px;
+		height:60px;
+		border-radius:50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.form .form__btn{
+	color: $color_orange;
+	background: white;
+	font-size: 14px;
+	line-height: normal;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .2s;
+	&:hover{
+		color:white;
+		background: $color_orange;
+	}
+}
